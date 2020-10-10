@@ -1,4 +1,4 @@
-### We test strong scaling results and parallel efficiency of D-EE.
+### strong scaling and parallel efficiency results of D-EE.
 The strong scaling performance is tested of D-EE using iPSCs dataset under 500, 1000, 2000, and 4000 processes, respectively. 
 These runtimes are listed in speedup_time.R.
 

@@ -64,7 +64,7 @@ make main
 make run
 ```
 
-**parametersn**
+**parameters**
 
 In "make run" command, there exist some parameters in the command, the common format
 of the command in makefile is:

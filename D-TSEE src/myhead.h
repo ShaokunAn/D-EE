@@ -1,6 +1,6 @@
 //
 //  myhead.h
-//  parallel_test
+//  D-TSEE
 //
 //  Created by 安少坤 on 2019/3/26.
 //  Copyright © 2019 Shaokun An. All rights reserved.

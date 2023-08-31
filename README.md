@@ -19,10 +19,10 @@ The version of PETSc used in D-EE is 3.11.4 with external package 'elemental'.
 
 ### Installation 
  **install MPI**
- 
+
  If MPI wasn't not installed in advance, you can download MPI from https://www.mpich.org/ 
  and install it according to its corresponding guidelines or the README file in the download files.
- 
+
 **install PETSc**
 
 The PETSc package used in our software needs external Elemental package. You can install them as follows:
@@ -38,11 +38,12 @@ cd petsc-3.11.4/
 '--with-mpi-dir=/home/<USERNAME>/<MPI_INSTALL_DIR>'
 python configure.py
 # according to the final prompt set PETSC_DIR and PETSC_ARCH
-make PETSC_DIR=/home/<USERNAME>/PETSC-3.11.4/petsc-3.11.4 PETSC_ARCH=arch-linux-c-opt all
-# check if libraries are working
-make PETSC_DIR=/home/<USERNAME>/PETSC-3.11.4/petsc-3.11.4 PETSC_ARCH=arch-linux-c-opt check
+make PETSC_DIR=/home/<USERNAME>/PETSc/petsc-3.11.4 PETSC_ARCH=arch-linux-c-opt all
+# check if LD_LIBRARY_PATH is set by echo $LD_LIBRARY_PATH. If not: export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:<MPI_INSTALL_DIR>/lib
+# according to the final prompt check if libraries are working
+make PETSC_DIR=/home/<USERNAME>/PETSc/petsc-3.11.4 PETSC_ARCH=arch-linux-c-opt check
 # set PETSC_DIR and PETSC_ARCH in your ~/.bash_profile 
-export PETSC_DIR=/home/<USERNAME>/PETSC-3.11.4/petsc-3.11.4
+export PETSC_DIR=/home/<USERNAME>/PETSc/petsc-3.11.4
 export PETSC_ARCH=arch-linux-c-opt
 # exit .bash_profile and source it in command
 source ~/.bash_profile
@@ -58,7 +59,7 @@ mkdir ~/D-EE
 cd ~/D-EE
 git clone https://github.com/ShaokunAn/D-EE.git \\ download D-EE to your computer
 cd D-EE
-cd src
+cd D-EE_src
 # make the input file name as TestData.csv, and the output file name as out_testdata
 make main
 make run
@@ -98,7 +99,6 @@ Please see the https://github.com/ShaokunAn/D-EE/blob/master/License file for th
 
 
 
- 
 
 
 

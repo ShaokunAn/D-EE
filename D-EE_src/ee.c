@@ -1,5 +1,5 @@
 #include <petsc.h>
-#include "petsc_ee_myhead.h"
+#include "DEE_myhead.h"
 
 PetscErrorCode ee(Mat Wp, Mat Wn, PetscInt d, PetscScalar lambda, Mat XX, PetscInt allrowcount, PetscInt rowcount, PetscInt maxit, PetscScalar tol){
 
